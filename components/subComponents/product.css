@@ -1,0 +1,239 @@
+/* product.css
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.box:hover {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.image-box-details-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.image-box-details-info p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.box {
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 30px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.box:hover {
+    transform: rotate(2deg);
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 2, 0.5);
+
+  border-radius: 15px;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.image-box img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.image-box-details {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.image-box-details-info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.image-box-details-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-box-details-btn button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.image-box-details-btn button:hover {
+  background-color: #0056b3;
+}
+
+
+.image-box-details-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container-btn {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;  
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} */
+
+
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ccc;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: rotate(2deg);
+  box-shadow: 2px 2px 4px rgba(0, 0, 2, 0.5);
+  border-radius: 15px;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.image-box img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.image-box-details {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.image-box-details-info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.image-box-details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image-box-details-btn a {
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-box-details-btn a:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+
+
+.product-catalog-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ccc;
+  box-sizing: border-box;
+  background-color:lightpink;
+}

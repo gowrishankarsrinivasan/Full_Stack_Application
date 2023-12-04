@@ -1,0 +1,99 @@
+/* Styles for the main payment container */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.payment_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Styles for the centered container inside the payment container */
+.payment_container-centered {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color:#fff;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 2s ease,ease-in-out 1s;
+}
+.payment_container-centered:hover{
+  box-shadow: 0 4px 4px rgb(79, 75, 75);
+
+}
+.payment_container-centered.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styles for the header in the payment container */
+.payment_container-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.payment_container-header h1{
+  font-family: 'Montserrat', sans-serif;/* Use Roboto font for the header */
+color: gray;
+}
+
+/* Styles for the image in the payment container */
+.payment_container-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the form details in the payment container */
+.payment_container-details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for labels and inputs in the payment container */
+.payment_container-details label {
+  font-family: 'Montserrat', sans-serif; /* Use Roboto font for the labels */
+  
+}
+
+.payment_container-details input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the container holding the expiry date and security code inputs */
+.payment_container-details-container-data{
+  display: flex;
+  width: 100%;
+  
+   /* Adjust the space between left and right inputs */
+}
+.payment_container-details-container-data input {
+  width: 90%;
+  
+   /* Adjust the space between left and right inputs */
+}
+
+.payment_container-details-container-data .pay_left,
+.payment_container-details-container-data .Pay_right {
+  flex: 1;
+  /* You can add some margin if needed, but be careful not to exceed the available space */
+}
+
+/* Styles for the Pay button in the payment container */
+.pay_button_card {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif; /* Use Roboto font for the button */
+}
+
+.pay_button_card:hover {
+  background-color: #0056b3;
+}
