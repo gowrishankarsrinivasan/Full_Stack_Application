@@ -1,0 +1,43 @@
+/* Profile.css */
+
+/* Container for the entire profile */
+.profile-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  width: 400px;
+  height: 600px;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  overflow: hidden; /* Ensure that the gradient doesn't overflow */
+}
+.profile-card:hover{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.gradient-container {
+  background-image: linear-gradient(#91ba91, #205fff);
+  height: 150px;
+  border-radius: 4px 4px 0 0;
+}
+
+.profile-image {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  height: 150px; /* Adjust the height as needed */
+  width: 150px; /* Adjust the width as needed */
+  margin-top: -60px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+}
